@@ -1,0 +1,108 @@
+.contacts-info  {
+  color: $text-color-middle;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.contacts-info__cell {
+  width: 76px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.contacts-info__cell a {
+  border-bottom: 1px solid $item-color-light;
+  color: $text-color-dark;
+  padding-bottom: 5px;
+}
+
+.contacts-info__row:first-of-type {
+  height: 60px;
+}
+
+.contacts-info__row:nth-of-type(2) .contacts-info__cell {
+  width: 186px;
+  height: 120px;
+}
+
+.contacts-info__row:nth-of-type(2) .contacts-info__cell:nth-of-type(2) {
+  padding-right: 35px;
+  padding-left: 5px;
+}
+
+.contacts-info__cell a:hover {
+  border-bottom: 1px solid $mail-link-hover;
+  color: $mail-link-hover;
+}
+
+.contacts-info__cell a:active {
+  border-bottom: 1px solid $mail-link-down;
+  color: $mail-link-down;
+}
+
+@media #{$tablet-min} and #{$tablet-max}  {
+
+  .contacts-info {
+    width: 668px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .contacts-info__row {
+    display: inline-block;
+    vertical-align: top;
+    width: 330px;
+  }
+
+  .contacts-info__row  .contacts-info__cell:first-child {
+    width: 78px;
+    padding: 0;
+  }
+
+  .contacts-info__cell:nth-child(2) {
+    width: 260px;
+    padding-right: 20px;
+  }
+
+  .contacts-info__cell a {
+    padding-left: 10px;
+  }
+
+  .contacts-info__row:nth-of-type(2) .contacts-info__cell {
+    width: 50px;
+    height: 100px;
+    padding-right: 28px;
+    padding-left: 2px;
+  }
+
+  .contacts-info__row:nth-of-type(2) .contacts-info__cell:last-of-type {
+    box-sizing: border-box;
+    width: 220px;
+    padding-right: 35px;
+    padding-left: 0px;
+  }
+}
+
+@media #{$desktop-min} {
+
+  .contacts-info {
+    width: 350px;
+    font-size: 17px;
+    line-height: 30px;
+    margin-left: auto;
+  }
+
+  .contacts-info__row {
+    vertical-align: top;
+    width: 334px;
+  }
+
+  .contacts-info__row  .contacts-info__cell:first-child {
+    width: 84px;
+    padding: 0;
+  }
+
+  .contacts-info__row  .contacts-info__cell:nth-child(2) {
+    width: 275px;
+  }
+}

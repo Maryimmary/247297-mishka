@@ -1,0 +1,143 @@
+.main-content {
+  position: relative;
+  background: $base-bg-color;
+}
+
+.page--index .main-content::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 7px;
+  padding: 0;
+  z-index: 2;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-size: contain;
+  background-repeat: repeat-x;
+  top: 1310px;
+}
+
+.page--index .main-content::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 7px;
+  padding: 0;
+  z-index: 2;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-size: contain;
+  background-repeat: repeat-x;
+  top: 2790px;
+}
+
+.main-content__layout-container {
+  position: relative;
+  width: 320px;
+  margin: auto;
+}
+
+@media #{$tablet-min}  {
+
+  .page--index .main-content {
+    box-shadow: inset 0 670px 0 0  $middle-bg-color;
+    position: relative;
+  }
+
+  .page--catalog .main-content {
+    box-shadow: inset 0 160px 0 0  $dark-bg-color;
+    position: relative;
+  }
+
+  .page--form .main-content {
+    box-shadow: inset 0 160px 0 0  $dark-bg-color;
+    position: relative;
+  }
+
+  .main-content__layout-container {
+    position: relative;
+    width: 768px;
+  }
+
+  .main-content__layout-container--form {
+    width: 100%;
+  }
+
+  .page--index .main-content::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    padding: 0;
+    z-index: 2;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-size: contain;
+    background-repeat: repeat-x;
+    top: 1270px;
+  }
+
+  .page--index .main-content::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    padding: 0;
+    z-index: 2;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-size: contain;
+    background-repeat: repeat-x;
+    top: 2450px;
+  }
+}
+
+@media #{$desktop-min}  {
+
+  .main-content__layout-container {
+    position: relative;
+    width: 1250px;
+  }
+
+  .main-content__layout-container--form {
+    width: 100%;
+  }
+
+  .page--index .main-content::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    padding: 0;
+    z-index: 2;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-size: contain;
+    background-repeat: repeat-x;
+    top: 1440px;
+  }
+
+  .page--index .main-content::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    padding: 0;
+    z-index: 2;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-size: contain;
+    background-repeat: repeat-x;
+    top: 2650px;
+  }
+
+  .page--catalog .main-content {
+    box-shadow: inset 0 170px 0 0  $dark-bg-color;
+    position: relative;
+  }
+
+  .page--form .main-content {
+    box-shadow: inset 0 170px 0 0  $dark-bg-color;
+    position: relative;
+  }
+}

@@ -1,0 +1,32 @@
+@import "normalize.scss";
+
+@import "variables.scss";
+@import "mixins.scss";
+
+
+@import "global/fonts.scss";
+@import "global/order-form.scss";
+@import "global/check-form.scss";
+@import "global/input.scss";
+@import "global/checkbox.scss";
+@import "global/radio.scss";
+@import "global/radio-block.scss";
+
+
+@import "blocks/main-header.scss";
+@import "blocks/main-navigation.scss";
+@import "blocks/page-present.scss";
+@import "blocks/main-footer.scss";
+@import "blocks/social-links.scss";
+@import "blocks/item-week.scss";
+@import "blocks/item-features.scss";
+@import "blocks/btn.scss";
+@import "blocks/about-us.scss";
+@import "blocks/reviews.scss";
+@import "blocks/contacts.scss";
+@import "blocks/modal-content.scss";
+@import "blocks/catalog.scss";
+@import "blocks/promo-video.scss";
+@import "blocks/modal-overlay.scss";
+@import "blocks/main-content.scss";
+@import "blocks/contacts-info.scss";

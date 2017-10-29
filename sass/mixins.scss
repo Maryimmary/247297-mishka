@@ -1,0 +1,99 @@
+@mixin base-font() {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: normal;
+}
+
+@mixin bold-font() {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: bold;
+}
+
+@mixin page-present-text () {
+  text-align: center;
+  font-size: 27px;
+  font-weight: bold;
+  color: $text-color-dark;
+
+  @media #{$tablet-min} {
+    font-size: 43px;
+  }
+
+  @media #{$desktop-min} {
+    font-size: 53px;
+  }
+}
+
+@mixin section-title-text () {
+  font-size: 25px;
+  font-weight: bold;
+  color: $text-color-dark;
+
+  @media #{$tablet-min} {
+    font-size: 43px;
+  }
+
+  @media #{$desktop-min} {
+    font-size: 53px;
+  }
+}
+
+@mixin modal-title-text () {
+  font-size: 25px;
+  font-weight: bold;
+  color: $text-color-dark;
+
+  @media #{$tablet-min} {
+    font-size: 30px;
+  }
+
+  @media #{$desktop-min} {
+    font-size: 30px;
+  }
+}
+
+@mixin description-text () {
+  color: $text-color-middle;
+  font-size: 15px;
+
+
+  @media #{$tablet-min} {
+    font-size: 17px;
+  }
+}
+
+@mixin padding-x () {
+  padding-left: 30px;
+  padding-right: 30px;
+
+  @media #{$tablet-min} {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+  @media #{$desktop-min} {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@mixin form-title () {
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: bold;
+  color: $item-color-light;
+  text-transform: uppercase;
+}
+
+@mixin label-text () {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+  color: $text-color-dark;
+}
+
+@mixin catalog-item-title () {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  color: $text-color-dark;
+}

@@ -1,0 +1,226 @@
+.input__field {
+  background: none;
+  border: none;
+  border-bottom: 2px solid $text-color-dark;
+  color: $text-color-form;
+  font-size: 18px;
+}
+
+.input__field:hover {
+  border-bottom: 2px solid $item-color-dark;
+  color: $text-color-form;
+}
+
+.input__field:focus {
+  outline: none;
+  border-bottom: 2px solid $item-color-dark;
+  color: $text-color-dark;
+}
+
+.input__field:active {
+  border-bottom: 2px solid $item-color-dark;
+  color: $text-color-dark;
+}
+
+.input--phone .input__field:hover {
+  background-image: url("../img/hover/icon-phone.svg");
+}
+
+.input--email .input__field:hover {
+  background-image: url("../img/hover/icon-mail.svg");
+}
+
+.input--phone .input__field:focus {
+  background-image: url("../img/active/icon-phone.svg");
+}
+
+.input--email .input__field:focus {
+  background-image: url("../img/active/icon-mail.svg");
+}
+
+@media #{$mobile-max} {
+
+  .input {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .input__label {
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 27px;
+    margin-bottom: 10px;
+  }
+
+  .input:nth-of-type(2) .input__label {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .input:nth-of-type(3) .input__label {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .input__field {
+    box-sizing: border-box;
+    flex-grow: 1;
+    padding-bottom: 14px;
+    font-size: 17px;
+  }
+
+  .input--phone .input__field {
+    background-image: url("../img/icons/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: 227px -2px;
+    margin-top: 20px;
+  }
+
+  .input--email .input__field {
+    background-image: url("../img/icons/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-position: 225px -2px;
+    margin-top: 20px;
+  }
+}
+
+@media #{$tablet-min} and #{$tablet-max} {
+
+  .input {
+    display: flex;
+    flex-direction: row;
+    height: 52px;
+    width: 501px;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  .input__label {
+    font-size: 19px;
+    font-weight: bold;
+  }
+
+  .input__field {
+    box-sizing: border-box;
+    margin-left: 24px;
+    flex-grow: 1;
+    border: none;
+    border-bottom: 2px solid $text-color-dark;
+    padding-bottom: 14px;
+    padding-left: 17px;
+    font-size: 19px;
+  }
+
+  .input:first-of-type {
+    margin-top: 58px;
+    margin-bottom: 23px;
+  }
+
+  .input:nth-of-type(even) {
+    margin-bottom: 25px;
+  }
+
+  .input--phone,
+  .input--email {
+    width: 501px;
+  }
+
+  .input--phone {
+    margin-top: 57px;
+  }
+
+  .input--email {
+    margin-top: 18px;
+  }
+
+  .input--phone > .input__field,
+  .input--email > .input__field {
+    margin-left: 0;
+    flex-grow: 1;
+  }
+
+  .input--phone .input__field {
+    background-image: url("../img/icons/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: 450px 0;
+  }
+
+  .input--email .input__field {
+    background-image: url("../img/icons/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-position: 447px 2px;
+  }
+}
+
+@media #{$desktop-min} {
+
+  .input {
+    display: flex;
+    flex-direction: row;
+    height: 52px;
+    width: 700px;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-left: 7px;
+  }
+
+  .input__label {
+    font-size: 19px;
+    font-weight: bold;
+  }
+
+  .input__field {
+    box-sizing: border-box;
+    width: 573px;
+    border: none;
+    border-bottom: 2px solid $text-color-dark;
+    padding-bottom: 14px;
+    padding-left: 17px;
+    font-size: 19px;
+  }
+
+  .input:first-of-type .input__field {
+    width: 626px;
+  }
+
+  .input:first-of-type {
+    margin-top: 60px;
+    margin-bottom: 24px;
+  }
+
+  .input:nth-of-type(even) {
+    margin-bottom: 25px;
+  }
+
+  .input--phone,
+  .input--email {
+    width: 700px;
+  }
+
+  .input--phone {
+    margin-top: 60px;
+    margin-left: 10px;
+  }
+
+  .input--email {
+    margin-top: 20px;
+    margin-left: -4px;
+  }
+
+  .input--phone > .input__field,
+  .input--email > .input__field {
+    width: 700px;
+  }
+
+  .input--phone .input__field {
+    background-image: url("../img/icons/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: 665px 1px;
+  }
+
+  .input--email .input__field {
+    background-image: url("../img/icons/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-position: 665px 2px;
+  }
+}

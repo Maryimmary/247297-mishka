@@ -1,0 +1,132 @@
+
+.radio__input {
+  display: none;
+}
+
+.radio__input + .radio__label:hover::before {
+  border: 2px solid $item-color-dark;
+}
+
+.radio__input + .radio__label:active::before {
+  border: 2px solid #c9c9c9;
+}
+
+  @media #{$mobile-min} and #{$mobile-max} {
+
+  .radio {
+    position: relative;
+    width: 170px;
+    height: 40px;
+    padding-left: 65px;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 20px;
+  }
+
+  .radio:first-of-type {
+    margin-top: 31px;
+    margin-bottom: 21px;
+  }
+
+  .radio__input + .radio__label::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    border: 2px solid $text-color-dark;
+    border-radius: 50%;
+    bottom: 8px;
+    left: 0px;
+  }
+
+  .radio__input:checked + .radio__label::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: $item-color-dark;
+    border-radius: 50%;
+    bottom: 20px;
+    left: 13px;
+  }
+
+  .radio__input:first-of-type + .radio__label {
+    padding-top: -2px;
+    margin-left: -2px;
+  }
+}
+
+@media #{$tablet-min} {
+
+  .radio {
+    position: relative;
+    width: 334px;
+    height: 38px;
+    padding-left: 82px;
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 20px;
+  }
+
+  .radio:first-of-type {
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+
+  .radio__input + .radio__label::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 49px;
+    height: 49px;
+    border: 2px solid $text-color-dark;
+    border-radius: 50%;
+    bottom: -1px;
+    left: 0px;
+  }
+
+  .radio__input:checked + .radio__label::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    background: $item-color-dark;
+    border-radius: 50%;
+    bottom: 17px;
+    left: 17px;
+  }
+}
+
+@media #{$desktop-min} {
+
+  .radio {
+    padding-left: 85px;
+  }
+
+  .radio__input + .radio__label::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 49px;
+    height: 49px;
+    border: 2px solid $text-color-dark;
+    border-radius: 50%;
+    bottom: -1px;
+    left: 5px;
+  }
+
+  .radio__input:checked + .radio__label::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    background: $item-color-dark;
+    border-radius: 50%;
+    bottom: 17px;
+    left: 22px;
+  }
+}

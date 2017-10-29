@@ -1,0 +1,149 @@
+.btn {
+  display: block;
+  margin: auto;
+  box-sizing: border-box;
+  background-color: $base-bg-color;
+  border-color: $text-color-middle;
+  color: $text-color-middle;
+  font-size: 17px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 50px;
+
+  &--big {
+    width: 259px;
+    height: 52px;
+    border: 2px solid $text-color-middle;
+  }
+
+  &--small {
+    width: 192px;
+    height: 52px;
+    border: 2px solid $text-color-middle;
+    margin: auto;
+  }
+
+  &--green {
+    background-color: $item-color-light;
+    color: $text-color-light;
+    border: none;
+    line-height: 16px;
+  }
+}
+
+.btn:not(.btn--green):hover {
+  background-color: $text-color-middle;
+  color: $text-color-light;
+}
+
+.btn:not(.btn--green):active {
+  background-color: $text-color-middle;
+  color: #757575;
+}
+
+@media #{$mobile-max} {
+
+  .btn--review {
+    width: 260px;
+    height: 52px;
+    line-height: 48px;
+  }
+
+  .btn--green {
+    font-size: 17px;
+  }
+
+  .btn--big {
+    line-height: 30px;
+  }
+
+  .btn--buy {
+    line-height: 49px;
+  }
+
+  .btn--review {
+    line-height: 45px;
+  }
+
+  .btn--write-us {
+    font-size: 18px;
+    margin-top: 34px;
+    width: 260px;
+    height: 52px;
+  }
+}
+
+@media #{$tablet-min} {
+
+  .btn--big {
+    width: 292px;
+    height: 52px;
+  }
+
+  .item-week .btn--buy {
+    margin-top: 32px;
+    width: 290px;
+  }
+
+  .btn--review {
+    order: -1;
+    width: 176px;
+    height: 52px;
+    margin-top: 80px;
+    margin-left: 312px;
+  }
+
+  .btn--write-us {
+    width: 230px;
+    height: 52px;
+    font-size: 17px;
+    line-height: 45px;
+  }
+
+  .btn--video {
+    margin-left: 42px;
+    margin-right: 42px;
+    margin-top: 37px;
+    line-height: 45px;
+    width: auto;
+  }
+
+  .btn--green {
+    width: 350px;
+  }
+}
+
+@media #{$desktop-min} {
+
+  .btn--small {
+    width: 230px;
+    height: 52px;
+  }
+
+  .btn--review {
+    order: -1;
+    width: 174px;
+    height: 51px;
+    margin-top: 77px;
+    margin-left: 478px;
+  }
+
+  .item-week .btn--buy {
+    margin-top: 33px;
+  }
+
+  .btn--write-us {
+    width: 230px;
+    height: 52px;
+    font-size: 17px;
+  }
+
+  .btn--video {
+    margin-left: 79px;
+    margin-top: 54px;
+    width: 230px;
+    height: 50px;
+    line-height: 44px;
+  }
+}

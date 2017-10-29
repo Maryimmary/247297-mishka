@@ -1,0 +1,15 @@
+.checked-form__container {
+  display: flex;
+  justify-content: space-between;
+  width: 260px;
+  margin-bottom: 31px;
+  margin: auto;
+  margin-bottom: 32px;
+}
+
+@media #{$tablet-min} {
+
+  .checked-form__container {
+    width: 350px;
+  }
+}

@@ -1,0 +1,39 @@
+.item-features {
+  color: $text-color-middle;
+  @include description-text;
+  margin-top: -5px;
+}
+
+.item-features__cell {
+  border-bottom: 1px solid $border-color;
+  padding: 8px 30px 11px 0;
+  vertical-align: middle;
+}
+
+@media #{$tablet-min} and #{$tablet-max} {
+
+  .item-features {
+    margin-top: 12px;
+  }
+
+  .item-features__cell {
+    height: 20px;
+    padding: 15px 26px 9px 3px;
+    font-size: 15px;
+    vertical-align: bottom;
+  }
+
+  .item-features__row:nth-of-type(n+2) .item-features__cell {
+    padding: 10px 26px 9px 0;
+    font-size: 15px;
+  }
+}
+
+@media #{$desktop-min} {
+
+  .item-features {
+    margin-left: -3px;
+    margin-top: 30px;
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,37 @@
+$base-bg-color: rgb(255, 255, 255);
+$middle-bg-color: rgb(249, 249, 249);
+$dark-bg-color: rgb(241, 241, 241);
+$border-color: rgb(236, 236, 236);
+$border-modal-color: #c6c6c6;
+
+$text-color-light: rgb(255, 255, 255);
+$text-color-middle: rgb(68, 68, 68);
+$text-color-dark: rgb(0, 0, 0);
+
+$text-color-form: #c7c7c7;
+
+$item-color-light: #63d1bb;
+$item-color-dark: #56c3b2;
+$item-color-light-hover: #63d1bb;
+$item-color-dark-hover: #46c1ae;
+$item-color-light-active: #59d5bc;
+$item-color-dark-active: #46c1ae;
+
+$mobile-min: (min-width: 320px);
+$mobile-max: (max-width: 768px);
+
+$tablet-min: (min-width: 769px);
+$tablet-max: (max-width: 1199px);
+
+$desktop-min: (min-width: 1200px);
+
+$retina: (min-resolution: 144dpi), (min-resolution: 1.5dppx);
+
+$hover-border-color: #c7c7c7;
+
+$hover-text-color: #999999;
+$active-text-color: #b2b2b2;
+$down-text-color: #b2b2b2;
+
+$mail-link-hover: #46c1ae;
+$mail-link-down: #c7ece7;
