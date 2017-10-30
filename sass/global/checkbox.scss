@@ -133,26 +133,17 @@
 
     .checkbox {
       width: 200px;
-      margin-top: 50px;
-      margin-left: 60px;
+      margin-left: 0;
+      margin-right: 60px;
+    }
+
+    .checkbox:nth-of-type(3n) {
+      margin-right: 30px;
     }
 
     .checkbox__label {
       padding-left: 5px;
       line-height: 45px;
-    }
-
-    .checkbox:nth-of-type(n+4) {
-      margin-top: 25px;
-    }
-
-    .checkbox:nth-of-type(3n) {
-      margin-left: 68px;
-    }
-
-    .checkbox:first-of-type,
-    .checkbox:nth-of-type(4) {
-      margin-left: 0;
     }
 
     .checkbox__input + .checkbox__label::before {
