@@ -40,7 +40,7 @@
     @media #{$retina} {
       background-image: url("../img/icons/icon-map-pin.svg"),
                         url("../img/map-mobile@2x.jpg");
-      background-size: 50% 50%, 640px auto;
+      background-size: 50% 50%, 320px auto;
     }
   }
 }
@@ -90,7 +90,7 @@
     @media #{$retina} {
       background-image: url("../img/icons/icon-map-pin.svg"),
                         url("../img/map-tablet@2x.jpg");
-      background-size: auto, 1535px auto;
+      background-size: auto, 768px auto;
     }
   }
 }
@@ -142,7 +142,7 @@
       @media #{$retina} {
         background-image: url("../img/icons/icon-map-pin.svg"),
                           url("../img/map-desktop@2x.jpg");
-        background-size: auto, 1535px auto;
+        background-size: auto, 525px auto;
       }
     }
   }

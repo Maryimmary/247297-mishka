@@ -1,9 +1,9 @@
 .social-links {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin: auto;
-  width: 162px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
 }
 
 .social-links__item {
@@ -11,25 +11,29 @@
   width: 44px;
   height: 44px;
   box-sizing: border-box;
+  text-align: center;
 }
 
 .social-links__item--icon-insta,
 .social-links__item--icon-twitter {
-  margin-left: 8px;
   margin-top: 8px;
 }
 
 .social-links__item--icon-facebook {
-  margin-left: 12px;
   margin-top: 3px;
 }
 
-svg[class^="social-links__item--icon"]:hover path {
-  fill: #46c1ae;
+.social-links__item:nth-of-type(2n) {
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
-svg[class^="social-links__item--icon"]:active path {
-  fill: #bde3dd;
+.social-links__item:hover .social-links__icon {
+  fill: $item-color-dark-hover;
+}
+
+.social-links__item:active .social-links__icon {
+  opacity: 0.3;
 }
 
 @media #{$mobile-max} {

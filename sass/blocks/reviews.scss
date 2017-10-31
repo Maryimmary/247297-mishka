@@ -60,7 +60,7 @@
 @media #{$mobile-max} {
 
   .reviews {
-    margin-top: 56px;
+    margin-top: 50px;
     padding-bottom: 50px;
   }
 
@@ -101,10 +101,10 @@
     background-position: left top;
     background-size: auto;
 
-      @media #{$retina} {
-        background-image: url("../img/review@2x.jpg");
-        background-size: 700px auto;
-      }
+    @media #{$retina} {
+      background-image: url("../img/review@2x.jpg");
+      background-size: 350px auto;
+    }
   }
 
   .reviews__title {
