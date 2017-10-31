@@ -50,6 +50,43 @@
   }
 }
 
+.page-present__merchandise svg {
+  fill: $item-base-color;
+  opacity: 0.5;
+}
+
+.page-present__merchandise:hover svg {
+  opacity: 0.7;
+}
+
+.page-present__merchandise:active svg {
+  opacity: 0.3;
+}
+
+.page-present__merchandise--interior:hover {
+  background-color: $item-color-light-hover;
+  box-shadow: 0 -5px 0 0 $item-color-light-hover;
+  padding-bottom: 5px;
+}
+
+.page-present__merchandise--toys:hover {
+  background-color: $item-color-dark-hover;
+  box-shadow: 0 -5px 0 0 $item-color-dark-hover;
+  padding-bottom: 5px;
+}
+
+.page-present__merchandise--interior:active {
+  background-color: $item-color-light-active;
+}
+
+.page-present__merchandise--toys:active {
+  background-color: $item-color-dark-active;
+}
+
+.page-present__merchandise:active div {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 @media #{$mobile-max} {
 
   .page-present {
@@ -114,19 +151,6 @@
   .page-present__merchandise:last-of-type svg {
     margin-left: 43px;
     margin-top: 20px;
-  }
-
-  .page-present__merchandise svg {
-    fill: $item-base-color;
-    opacity: 0.5;
-  }
-
-  .page-present__merchandise:hover svg {
-    opacity: 0.7;
-  }
-
-  .page-present__merchandise:active svg {
-    opacity: 0.3;
   }
 }
 
@@ -292,40 +316,4 @@
   .page-present__merchandise:hover svg {
     margin-top: 25px;
   }
-}
-
-.page-present__merchandise--interior:hover {
-  background-color: $item-color-light-hover;
-  box-shadow: 0 -5px 0 0 $item-color-light-hover;
-  padding-bottom: 5px;
-  svg #icon-interior {
-    fill: #89c7bf;
-  }
-}
-
-.page-present__merchandise--toys:hover {
-  background-color: $item-color-dark-hover;
-  box-shadow: 0 -5px 0 0 $item-color-dark-hover;
-  padding-bottom: 5px;
-  svg #icon-toy {
-    fill: #89c7bf;
-  }
-}
-
-.page-present__merchandise--interior:active {
-  background-color: $item-color-light-active;
-  svg #icon-interior {
-    fill: #5ab1a6;
-  }
-}
-
-.page-present__merchandise--toys:active {
-  background-color: $item-color-dark-active;
-  svg #icon-toy {
-    fill: #5ab1a6;
-  }
-}
-
-.page-present__merchandise:active div {
-  color: rgba(255, 255, 255, 0.3);
 }

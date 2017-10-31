@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
     <script>document.createElement("picture");</script>
@@ -65,6 +65,10 @@
               <div class="catalog__img">
                 <a href="#">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-1-desktop@1x.webp 1x, img/photo-1-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 769px)" srcset="img/photo-1-tablet@1x.webp 1x, img/photo-1-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/photo-1-mobile@1x.webp, img/photo-1-mobile@2x.webp 2x">
+
                     <source media="(min-width: 1200px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
                     <source media="(min-width: 769px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
                     <img src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Зайчик-попрыгайчик">
@@ -87,6 +91,10 @@
               <div class="catalog__img">
                 <a href="#">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-2-desktop@1x.webp 1x, img/photo-2-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 769px)" srcset="img/photo-2-tablet@1x.webp 1x, img/photo-2-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/photo-2-mobile@1x.webp, img/photo-2-mobile@2x.webp 2x">
+
                     <source media="(min-width: 1200px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
                     <source media="(min-width: 769px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
                     <img src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Корзинка для белья">
@@ -110,6 +118,10 @@
               <div class="catalog__img">
                 <a href="#">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-3-desktop@1x.webp 1x, img/photo-3-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 769px)" srcset="img/photo-3-tablet@1x.webp 1x, img/photo-3-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/photo-3-mobile@1x.webp, img/photo-3-mobile@2x.webp 2x">
+
                     <source media="(min-width: 1200px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
                     <source media="(min-width: 769px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
                     <img src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Большая корзинка для игрушек">
@@ -144,23 +156,23 @@
       <div class="main-footer__layout-container">
         <a href="index.html" class="main-footer__logo">
           <svg class="main-footer__svg-logo" width="102" height="35">
-            <use xlink:href="img/symbols.svg#icon-logo-footer"></use>
+            <use xlink:href="img/sprite.svg#icon-logo-footer"></use>
           </svg>
         </a>
         <section class="social-links">
           <a class="social-links__item social-links__item--instagram" href="#">Мы в Инстаграме
             <svg class="social-links__icon" width="22" height="22">
-              <use xlink:href="img/symbols.svg#icon-insta"></use>
+              <use xlink:href="img/sprite.svg#icon-insta"></use>
             </svg>
           </a>
           <a class="social-links__item social-links__item‐‐facebook" href="#">Мы в Фейсбуке
             <svg class="social-links__icon" width="15" height="28">
-              <use xlink:href="img/symbols.svg#icon-fb"></use>
+              <use xlink:href="img/sprite.svg#icon-fb"></use>
             </svg>
           </a>
           <a class="social-links__item social-links__item‐‐twitter" href="#">Мы в Твиттере
             <svg class="social-links__icon" width="24" height="21">
-              <use xlink:href="img/symbols.svg#icon-twitter"></use>
+              <use xlink:href="img/sprite.svg#icon-twitter"></use>
             </svg>
           </a>
         </section>
@@ -168,7 +180,7 @@
           <a class="main-footer__btn-academy" href="https://htmlacademy.ru/intensive/adaptive">
             <span>Разработано</span>
             <svg class="main-footer__btn-img" width="27" height="34">
-              <use xlink:href="img/symbols.svg#icon-logo-htmlacademy"></use>
+              <use xlink:href="img/sprite.svg#icon-logo-htmlacademy"></use>
             </svg>
           </a>
         </section>

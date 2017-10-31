@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
     <script>document.createElement("picture");</script>
@@ -62,13 +62,13 @@
             <a class="page-present__merchandise page-present__merchandise--interior" href="#">
               <div>Предметы интерьера</div>
               <svg role="img" class="page-present__merchandise__svg" width="41" height="62">
-                <use xlink:href="img/symbols.svg#icon-interior"></use>
+                <use xlink:href="img/sprite.svg#icon-interior"></use>
               </svg>
             </a>
             <a class="page-present__merchandise page-present__merchandise--toys" href="#">
               <div>Детские<br> игрушки</div>
               <svg role="img" class="page-present__merchandise__svg" width="60" height="60">
-                <use xlink:href="img/symbols.svg#icon-toy"></use>
+                <use xlink:href="img/sprite.svg#icon-toy"></use>
               </svg>
             </a>
           </div>
@@ -94,6 +94,10 @@
               </tr>
             </table>
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 769px)" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/triple-set-mobile@1x.webp, img/triple-set-mobile@2x.webp 2x">
+
               <source media="(min-width: 1200px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
               <source media="(min-width: 769px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
               <img class="item-week__photo" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Фото товара недели">
@@ -106,27 +110,27 @@
         <section class="about-us">
           <h2 class="about-us__title section-title">Коротко о нас</h2>
           <div class="about-us__features">
-            <img class="about-us__img" width="33"  height="38"  src="img/icons/icon-feature-1.svg" alt="icon">
+            <img class="about-us__img" width="33"  height="38"  src="img/icon-feature-1.svg" alt="icon">
             <p class="about-us__description">Экологически<br> чистые материалы</p>
           </div>
           <div class="about-us__features">
-            <img class="about-us__img" width="47"  height="27"   src="img/icons/icon-feature-3.svg" alt="icon">
+            <img class="about-us__img" width="47"  height="27"   src="img/icon-feature-3.svg" alt="icon">
             <p class="about-us__description">Скандинавский стиль<br> по российской цене</p>
           </div>
           <div class="about-us__features">
-            <img class="about-us__img" width="34"  height="27"  src="img/icons/icon-feature-5.svg" alt="icon">
+            <img class="about-us__img" width="34"  height="27"  src="img/icon-feature-5.svg" alt="icon">
             <p class="about-us__description">Увеличивает лайки<br> на фотографиях</p>
           </div>
           <div class="about-us__features">
-            <img class="about-us__img" width="35" height="34"   src="img/icons/icon-feature-2.svg" alt="icon">
+            <img class="about-us__img" width="35" height="34"   src="img/icon-feature-2.svg" alt="icon">
             <p class="about-us__description">Связано вручную с<br> любовью и умилением</p>
           </div>
           <div class="about-us__features">
-            <img class="about-us__img" width="55"  height="23"   src="img/icons/icon-feature-4.svg" alt="icon">
+            <img class="about-us__img" width="55"  height="23"   src="img/icon-feature-4.svg" alt="icon">
             <p class="about-us__description">Поддержка отечественного<br> производителя</p>
           </div>
           <div class="about-us__features">
-            <img class="about-us__img" width="33"  height="32"  src="img/icons/icon-feature-6.svg" alt="icon">
+            <img class="about-us__img" width="33"  height="32"  src="img/icon-feature-6.svg" alt="icon">
             <p class="about-us__description">Поставляется в<br> подарочной упаковке</p>
           </div>
         </section>
@@ -174,23 +178,23 @@
       <div class="main-footer__layout-container">
         <a href="#" class="main-footer__logo">
           <svg class="main-footer__svg-logo" width="102" height="35">
-            <use xlink:href="img/symbols.svg#icon-logo-footer"></use>
+            <use xlink:href="img/sprite.svg#icon-logo-footer"></use>
           </svg>
         </a>
         <section class="social-links">
           <a class="social-links__item social-links__item--instagram" href="#">Мы в Инстаграме
             <svg class="social-links__icon" width="22" height="22">
-              <use xlink:href="img/symbols.svg#icon-insta"></use>
+              <use xlink:href="img/sprite.svg#icon-insta"></use>
             </svg>
           </a>
           <a class="social-links__item social-links__item‐‐facebook" href="#">Мы в Фейсбуке
             <svg class="social-links__icon" width="15" height="28">
-              <use xlink:href="img/symbols.svg#icon-fb"></use>
+              <use xlink:href="img/sprite.svg#icon-fb"></use>
             </svg>
           </a>
           <a class="social-links__item social-links__item‐‐twitter" href="#">Мы в Твиттере
             <svg class="social-links__icon" width="24" height="21">
-              <use xlink:href="img/symbols.svg#icon-twitter"></use>
+              <use xlink:href="img/sprite.svg#icon-twitter"></use>
             </svg>
           </a>
         </section>
@@ -198,7 +202,7 @@
           <a class="main-footer__btn-academy" href="https://htmlacademy.ru/intensive/adaptive">
             <span>Разработано</span>
             <svg class="main-footer__btn-img" width="27" height="34">
-              <use xlink:href="img/symbols.svg#icon-logo-htmlacademy"></use>
+              <use xlink:href="img/sprite.svg#icon-logo-htmlacademy"></use>
             </svg>
           </a>
         </section>

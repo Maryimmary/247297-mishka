@@ -16,42 +16,43 @@
 }
 
 .promo-video__video {
-  background-image: url("../img/icons/icon-play.svg"),
+  background-image: url("../img/icon-play.svg"),
                     url("../img/video-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 101px 77px, 100% auto;
 
   @media #{$retina} {
-    background-image: url("../img/icons/icon-play.svg"),
+    background-image: url("../img/icon-play.svg"),
                       url("../img/video-mobile@2x.jpg");
-    background-size: auto, 520px auto;
+    background-size: 101px 77px, 520px auto;
   }
 }
 
 
 .promo-video__video:hover {
-  background-image: url("../img/icons/icon-play.svg"),
+  background-image: url("../img/icon-play.svg"),
                     url("../img/video-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 121px 92px, 100% auto;
 
   @media #{$retina} {
-    background-image: url("../img/icons/icon-play.svg"),
+    background-image: url("../img/icon-play.svg"),
                       url("../img/video-mobile@2x.jpg");
     background-size: 121px 92px, 520px auto;
   }
 }
 
 .promo-video__video:active {
-  background-image: url("../img/active/icon-play.svg"),
+  background-image: url("../img/icon-play.svg"),
                     url("../img/video-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto, 100% auto;
+  background-size: 101px 77px, 100% auto;
 
   @media #{$retina} {
-    background-image: url("../img/active/icon-play.svg"),
+    background-image: url("../img/icon-play.svg"),
                       url("../img/video-mobile@2x.jpg");
     background-size: auto, 520px auto;
   }
@@ -85,7 +86,7 @@
     display: block;
     width: 32px;
     height: 32px;
-    background-image: url("../img/icons/icon-video.svg");
+    background-image: url("../img/icon-video.svg");
     top: 12px;
     left: 35px;
   }
@@ -122,41 +123,41 @@
     height: 456px;
     width: 668px;
     margin: 0;
-    background-image: url("../img/icons/icon-play.svg"),
+    background-image: url("../img/icon-play.svg"),
                       url("../img/video-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: center;
 
     @media #{$retina} {
-      background-image: url("../img/icons/icon-play.svg"),
+      background-image: url("../img/icon-play.svg"),
                         url("../img/video-tablet@2x.jpg");
       background-size: auto, 1336px auto;
     }
   }
 
   .promo-video__video:hover {
-    background-image: url("../img/icons/icon-play.svg"),
+    background-image: url("../img/icon-play.svg"),
                       url("../img/video-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 121px 92px, 100% auto;
 
     @media #{$retina} {
-      background-image: url("../img/icons/icon-play.svg"),
+      background-image: url("../img/icon-play.svg"),
                           url("../img/video-tablet@2x.jpg");
       background-size: 121px 92px, 1336px auto;
     }
   }
 
   .promo-video__video:active {
-    background-image: url("../img/active/icon-play.svg"),
+    background-image: url("../img/icon-play.svg"),
                       url("../img/video-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto, 100% auto;
 
     @media #{$retina} {
-      background-image: url("../img/active/icon-play.svg"),
+      background-image: url("../img/icon-play.svg"),
                         url("../img/video-tablet@2x.jpg");
       background-size: auto, 1336px auto;
     }
@@ -166,7 +167,7 @@
     margin-left: 42px;
     margin-right: 42px;
     padding-left: 65px;
-    background-image: url("../img/icons/icon-video.svg");
+    background-image: url("../img/icon-video.svg");
     background-repeat: no-repeat;
     background-position: left 34px;
   }
@@ -204,41 +205,41 @@
     height: 455px;
     width: 681px;
     margin: 0;
-    background-image: url("../img/icons/icon-play.svg"),
+    background-image: url("../img/icon-play.svg"),
                       url("../img/video-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: center;
 
     @media #{$retina} {
-      background-image: url("../img/icons/icon-play.svg"),
+      background-image: url("../img/icon-play.svg"),
                         url("../img/video-desktop@2x.jpg");
       background-size: auto, 1364px auto;
     }
   }
 
   .promo-video__video:hover {
-    background-image: url("../img/icons/icon-play.svg"),
+    background-image: url("../img/icon-play.svg"),
                       url("../img/video-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 121px 92px, cover;
 
     @media #{$retina} {
-      background-image: url("../img/icons/icon-play.svg"),
+      background-image: url("../img/icon-play.svg"),
                         url("../img/video-desktop@2x.jpg");
       background-size: 121px 92px, 1364px auto;
     }
   }
 
   .promo-video__video:active {
-    background-image: url("../img/active/icon-play.svg"),
+    background-image: url("../img/icon-play.svg"),
                       url("../img/video-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto, cover;
 
     @media #{$retina} {
-      background-image: url("../img/active/icon-play.svg"),
+      background-image: url("../img/icon-play.svg"),
                         url("../img/video-desktop@2x.jpg");
       background-size: auto, 1364px auto;
     }
@@ -251,7 +252,7 @@
     margin-left: 79px;
     margin-right: 58px;
     padding-top: 95px;
-    background-image: url("../img/icons/icon-video.svg");
+    background-image: url("../img/icon-video.svg");
     background-repeat: no-repeat;
     background-position: left 40px;
   }

@@ -30,14 +30,6 @@
   background-image: url("../img/hover/icon-mail.svg");
 }
 
-.input--phone .input__field:focus {
-  background-image: url("../img/active/icon-phone.svg");
-}
-
-.input--email .input__field:focus {
-  background-image: url("../img/active/icon-mail.svg");
-}
-
 @media #{$mobile-max} {
 
   .input {
@@ -70,14 +62,14 @@
   }
 
   .input--phone .input__field {
-    background-image: url("../img/icons/icon-phone.svg");
+    background-image: url("../img/icon-phone.svg");
     background-repeat: no-repeat;
     background-position: 227px -2px;
     margin-top: 20px;
   }
 
   .input--email .input__field {
-    background-image: url("../img/icons/icon-mail.svg");
+    background-image: url("../img/icon-mail.svg");
     background-repeat: no-repeat;
     background-position: 225px -2px;
     margin-top: 20px;
@@ -140,13 +132,13 @@
   }
 
   .input--phone .input__field {
-    background-image: url("../img/icons/icon-phone.svg");
+    background-image: url("../img/icon-phone.svg");
     background-repeat: no-repeat;
     background-position: 450px 0;
   }
 
   .input--email .input__field {
-    background-image: url("../img/icons/icon-mail.svg");
+    background-image: url("../img/icon-mail.svg");
     background-repeat: no-repeat;
     background-position: 447px 2px;
   }
@@ -213,13 +205,13 @@
   }
 
   .input--phone .input__field {
-    background-image: url("../img/icons/icon-phone.svg");
+    background-image: url("../img/icon-phone.svg");
     background-repeat: no-repeat;
     background-position: 665px 1px;
   }
 
   .input--email .input__field {
-    background-image: url("../img/icons/icon-mail.svg");
+    background-image: url("../img/icon-mail.svg");
     background-repeat: no-repeat;
     background-position: 665px 2px;
   }
