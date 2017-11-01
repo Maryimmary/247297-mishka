@@ -23,6 +23,18 @@
 
 .modal-content--show {
   display: block;
+  animation: modal-appear 0.4s;
+}
+
+@keyframes modal-appear {
+  0% {
+    top: -100%;
+    opacity: 0;
+  }
+  100% {
+    top: 50%;
+    opacity: 1;
+  }
 }
 
 @media #{$mobile-max} {

@@ -1080,7 +1080,7 @@ th {
   .checkbox:nth-of-type(6) > .checkbox__label::before {
     top: -10px; }
   .checkbox__input:checked + .checkbox__label::before {
-    background-image: url("../img/icons/icon-tick.svg");
+    background-image: url("../img/icon-tick.svg");
     background-size: 22px 16px;
     background-repeat: no-repeat;
     background-position: center; } }
@@ -1110,7 +1110,7 @@ th {
     left: -82px;
     top: -10px; }
   .checkbox__input:checked + .checkbox__label::before {
-    background-image: url("../img/icons/icon-tick.svg");
+    background-image: url("../img/icon-tick.svg");
     background-size: 33px 22px;
     background-repeat: no-repeat;
     background-position: center; }
@@ -2700,7 +2700,8 @@ th {
 .map {
   min-width: 320px;
   max-width: 100%;
-  margin-top: 37px; }
+  margin-top: 37px;
+  border: none; }
 
 @media (max-width: 768px) {
   .map--no-js {
@@ -2835,7 +2836,25 @@ th {
       font-size: 30px; } }
 
 .modal-content--show {
-  display: block; }
+  display: block;
+  -webkit-animation: modal-appear 0.4s;
+          animation: modal-appear 0.4s; }
+
+@-webkit-keyframes modal-appear {
+  0% {
+    top: -100%;
+    opacity: 0; }
+  100% {
+    top: 50%;
+    opacity: 1; } }
+
+@keyframes modal-appear {
+  0% {
+    top: -100%;
+    opacity: 0; }
+  100% {
+    top: 50%;
+    opacity: 1; } }
 
 @media (max-width: 768px) {
   .modal-content p {
