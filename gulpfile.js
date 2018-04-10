@@ -12,7 +12,6 @@ var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
 var run = require("run-sequence");
 var del = require("del");
-var minifyJS = require("gulp-minify");
 
 gulp.task("style", function() {
   gulp.src("sass/style.scss")
@@ -24,18 +23,6 @@ gulp.task("style", function() {
     .pipe(minify())
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"));
-});
-
-gulp.task("compress", function() {
-  gulp.src("js/script.js")
-    .pipe(minifyJS({
-        ext:{
-            src:"script.js",
-            min:".js"
-        }
-    }))
-    .pipe(rename("script.min.js"))
-    .pipe(gulp.dest("build/js"))
 });
 
 gulp.task("serve", ["style"], function () {
@@ -93,5 +80,5 @@ gulp.task("clean", function () {
 });
 
 gulp.task("build", function (done) {
-  run("clean", "copy", "style", "compress", "images", "sprite", done);
+  run("clean", "copy", "style", "images", "sprite", done);
 });
