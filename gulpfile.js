@@ -1,20 +1,20 @@
 "use strict";
-var gulp = require("gulp");
-var sass = require("gulp-sass");
-var plumber = require("gulp-plumber");
-var postcss = require("gulp-postcss");
-var autoprefixer = require("autoprefixer");
-var server = require("browser-sync").create();
-var minify = require("gulp-csso");
-var rename = require("gulp-rename");
-var imagemin = require("gulp-imagemin");
-var webp = require("gulp-webp");
-var svgstore = require("gulp-svgstore");
-var run = require("run-sequence");
-var del = require("del");
-var js = require("gulp-uglify");
+const gulp = require("gulp");
+const sass = require("gulp-sass");
+const plumber = require("gulp-plumber");
+const postcss = require("gulp-postcss");
+const autoprefixer = require("autoprefixer");
+const server = require("browser-sync").create();
+const minify = require("gulp-csso");
+const rename = require("gulp-rename");
+const imagemin = require("gulp-imagemin");
+const webp = require("gulp-webp");
+const svgstore = require("gulp-svgstore");
+const run = require("run-sequence");
+const del = require("del");
+const js = require("gulp-uglify");
 
-gulp.task("style", function() {
+gulp.task("style", function () {
   gulp.src("sass/style.scss")
     .pipe(plumber())
     .pipe(sass())
@@ -65,7 +65,7 @@ gulp.task("sprite", function () {
 });
 
 gulp.task("javascript", function () {
-    return gulp.src("js/script.js")
+  return gulp.src("js/script.js")
     .pipe(js())
     .pipe(rename("script.min.js"))
     .pipe(gulp.dest("js"));
@@ -80,7 +80,7 @@ gulp.task("copy", function () {
   ], {
     base: "."
   })
-  .pipe(gulp.dest("build"));
+    .pipe(gulp.dest("build"));
 });
 
 gulp.task("clean", function () {
