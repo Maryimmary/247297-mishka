@@ -12,6 +12,7 @@ var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
 var run = require("run-sequence");
 var del = require("del");
+var js = require("gulp-uglify");
 
 gulp.task("style", function() {
   gulp.src("sass/style.scss")
@@ -33,7 +34,7 @@ gulp.task("serve", ["style"], function () {
     cors: true,
     ui: false
   });
-
+  gulp.watch("js/*.js", ["javascript"]);
   gulp.watch("sass/**/*.{scss,sass}", ["style"]);
   gulp.watch("*.html").on("change", server.reload);
 });
@@ -63,11 +64,18 @@ gulp.task("sprite", function () {
     .pipe(gulp.dest("build/img"));
 });
 
+gulp.task("javascript", function () {
+    return gulp.src("js/script.js")
+    .pipe(js())
+    .pipe(rename("script.min.js"))
+    .pipe(gulp.dest("js"));
+});
+
 gulp.task("copy", function () {
   return gulp.src([
     "fonts/*.{woff,woff2}",
     "img/**",
-    "js/**",
+    "js/*.min.js",
     "*.html"
   ], {
     base: "."
